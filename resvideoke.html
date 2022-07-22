@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="responsive.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css
+    " rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor
+    " crossorigin="anonymous">
+
+    
+      <style>
+                 
+      body{
+         background-color: darkorange;
+         height: 0%;
+         margin: 0;
+      }
+
+      
+       .grid-container{
+          
+            display:grid;
+            grid-template-rows: auto;
+            grid-template-columns: auto auto auto;                                                     
+            background:darkorange;
+            gap:5px;
+            grid-template-areas: 
+               "item1 item2 item3"
+                        
+            ;
+            
+         }
+
+         #item1 {
+            grid-area:item1;
+            justify-self:end;
+            align-self:start;
+         }
+         #item2 {
+            grid-area:item1;
+            justify-self:end;
+            align-self:center;
+            margin-top: 200px;
+         } #item3 {
+            grid-area:item1;
+            justify-self:end;
+            align-self:end;
+         } 
+         
+         .specs {
+               background-color:orangered;
+         }
+
+         .specs p{ 
+            text-align: center;
+            color:white;
+         }
+
+         .specs h2 {
+            text-align: center;
+            color:white;
+            
+         }
+          .specs li{ 
+            text-align: left; 
+            color:white; 
+                     
+         }
+         .container {    
+            
+            align-items: center;
+            background: Darkorange;             
+            margin: 1%;          
+         }
+
+         .container img{      
+            display:right; 
+            max-width: 80%;        
+            margin:5%; 
+         } 
+
+         .container button { 
+                       
+            height: 20%;                     
+         }
+         .card-footer button {
+  
+            width: 150px;
+            background:red;
+            color:white;
+            border-radius: 20px;  
+            padding:5px;
+            font-size:20px;
+            margin-bottom:5px; 
+            transition:0.2s;   
+}
+            .container button:hover {
+               
+               color:black;
+               border:2px solid black;
+            }
+
+            .container button:hover {
+               box-shadow: 1px 3px 9px 6px rgba(0,0,0,0.75);
+            -webkit-box-shadow: 1px 3px 9px 6px rgba(0,0,0,0.75);
+            -moz-box-shadow: 1px 3px 9px 6px rgba(0,0,0,0.75);
+            }
+
+            .prevbtn, .nextbtn {
+            position: relative;  
+            top: 20%;
+            padding: 50px;
+            margin-top: 50px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.2s ease-in;
+            border-radius: 50%;
+            
+         }
+         .prevbtn:hover, .nextbtn:hover {
+            background-color: white;
+            color: rgb(0,0,0);
+         }
+         .nextbtn {
+            right: 0;
+         }
+      </style>
+   </head>
+   <body>
+
+      <nav class="navbar navbar-expand-lg bg-danger sticky-top">
+         <div class="container-fluid">
+           <img src="Develop.gif" class="align-left">
+           <a class="navbar-brand" href="#"></a>
+           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+           </button>
+           <div class="collapse navbar-collapse" id="navbarNav">
+             <ul class="navbar-nav">
+               <li class="nav-item">
+                 <a class="nav-link" aria-current="page" href="http://127.0.0.1:5501/responsivcard.html">Home</a>
+               </li>
+               <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Features
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="http://127.0.0.1:5501/resvideoke.html">Karaoke</a></li>
+                    <li><a class="dropdown-item" href="http://127.0.0.1:5501/respesonet.html">Pesonet</a></li>                 
+                    <li><a class="dropdown-item" href="http://127.0.0.1:5501/reswifi.html">Wifi Vendo</a></li>
+                    <li><a class="dropdown-item" href="http://127.0.0.1:5501/resgames.html">Video Game</a></li>                 
+                    <li><a class="dropdown-item" href="http://127.0.0.1:5501/reswater.html">Water Despenser</a></li>
+                  </ul>
+                </li>              
+               <li class="nav-item">
+                 <a class="nav-link" href="#">Pricing</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="#">Contact us</a>
+               </li>
+             </ul>
+           </div>
+         </div>
+       </nav>
+ 
+    <div class="container-fluid text-center py-5">
+      <div class="row py-lg-6 text-black">
+            <div class="col-lg-6 col-md-8 col-12 mx-auto">
+                <H1>Passive Vendo Machine</H1>
+                <p>“Never depend on a single income.  
+                    Make investment to create a second source.” </p>
+            </div>
+        </div>
+    </div>
+ 
+   <div class="container-fluid text-center">
+    <div class="grid-container">   
+            <div class="container" id="item1">
+               <div class="slide">
+                  <img src="videoke.png" />
+               </div>
+               <div class="slide">
+                  <img src="videoke2.png" />
+               </div>
+               <div class="slide">
+                  <img src="videoke3.png" />
+               </div>
+            
+               <a class="prevbtn" onclick="changeSlide(-1)">❮</a>
+               <a class="nextbtn" onclick="changeSlide(1)">❯</a>
+            </div> 
+            
+            <div class="container" id="item2">
+               <div class="card-footer">
+                  <a href="http://127.0.0.1:5501/proform.html?purchase=videoke&message=++++++++++++++++++++++">>
+                     <button>Order form</button>
+                  </a>   
+               </div>      
+             </div>       
+
+
+      <div class="container id="item3">
+         <div class="specs">
+            <h2>Videoke Specs</h2>
+             <p>Description</p>
+ <ul>
+<li> Vilma 4x15 Megapro plus MP100</li>
+<li> Videoke Machine</li>
+<li> Power Supply: AC 220V 50/60Hz</li>
+<li> Power Consumption: 1000W (max)</li>
+<li> Housing Finish: Glossy Design Formica Top Skin</li>
+<li> Player: Megapro plus MP100</li>
+<li> Amplifier: Konzert AV-502</li>
+<li> Speaker System:</li>
+<li>   -4 x 15" SG15 Konzert Woofer</li>
+<li>   -2 x 5" SG5M Konzert Midrange</li>
+  <li> -2 x 3" Round Metal Dome Tweeter</li>
+  <li>-2 x 6" Rectangular Metal Dome Tweeter</li>
+<li> 25" Surplus Picture Tube TV</li>
+<li> Dimension: 70 (W) x 95 (D) x 106 (H) cm (TV excluded)</li>
+<li> Voltes 5 assembly point at 58 cm high</li>
+<li> Warranty:</li>
+<li>  -Parts: (carry in)/Player: 
+<li>  6 months/Amplifier: 6 months/TV: 3 months</li>
+ <li     -Service: 12 months (carry in)</li>
+<li> Assembled in the Philippines</li> 
+</ul>
+       
+
+      </div>
+  </div>
+ 
+   </div>   
+
+   <script>
+         let slideIndex = [1,1];
+         viewSlides(1);
+         function changeSlide(n) {
+            viewSlides(slideIndex[0] += n);
+         }
+         function viewSlides(n) {
+            let ele = document.getElementsByClassName("slide");
+            if (n > ele.length) {
+               slideIndex[0] = 1
+            }
+            if (n < 1) {
+               slideIndex[0] = ele.length
+            }
+            for (i = 0; i < ele.length; i++) {
+               ele[i].style.display = "none";
+            }
+            ele[slideIndex[0]-1].style.display = "block";
+         }
+      </script>
+
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js
+" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2
+" crossorigin="anonymous"></script>  
+
+   </body>
+</html>
